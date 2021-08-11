@@ -1,0 +1,76 @@
+.Slot{
+	display:flex;
+	flex-wrap: wrap;
+	background-color: black;
+	/* justify-content: space-between; */
+	padding: 10px;
+	font-weight: bolder;
+	/* position: fixed; */
+	align-items: center;
+}
+
+.Slot > img{
+	background-color: grey;
+}
+
+.Slot > div{
+	cursor: pointer;
+	color: yellow;
+	top: 0;
+}
+
+.Select{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px;
+}
+
+
+.dropdown-menu{
+	background-color: black;
+	display: block;
+	justify-content: center;
+}
+
+a{
+	color:white;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: coral;
+}
+
+.Slot > div> div> button{
+	background-color: black;
+	color: yellow;
+	box-shadow: none;
+	border-radius: 4px;
+	border: none;
+	font-size:16px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0px;
+	outline: none;
+}
+
+
+
+
+.push > div{
+		padding: 5px;
+		margin: 5px;
+}
+
+.bar{
+	border: 2px solid coral;
+	color: white;
+	background-color: black;
+	width: 100%;
+	outline: none;
+	height: 25px;
+}

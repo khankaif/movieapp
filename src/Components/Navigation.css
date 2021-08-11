@@ -1,0 +1,38 @@
+p{
+	justify-content: left;
+	color: #E18728;
+	cursor: pointer;
+	margin: 20px;
+ 
+}
+
+.push{
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+h2{
+	margin-right: 100px;
+	color: rgb(165, 85, 85);
+	cursor: default;
+}
+
+.SearchBar{
+	justify-content: left;
+	margin:20px; 
+	/*padding: 20px;*/
+
+	}
+nav{
+	display: flex;
+	align-items:center;
+	background-color: #F6E1DC;
+/*	margin-bottom:0px; 
+	margin:20px;*/
+	padding: 1px;
+}
+
+.logo{
+	margin-left: 10px;
+}

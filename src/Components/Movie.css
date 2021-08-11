@@ -1,0 +1,102 @@
+.display{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 3px;
+	margin-bottom: 0px;
+}
+.posterContent{
+	width:300px;
+	height: auto;
+	background-color:black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: orange;
+	cursor: pointer;
+}
+
+.posterContent > img{
+	max-width: 100%;
+	max-height: 100%;
+}
+ 
+.posterContent > h3{
+	display: block;
+}
+
+.Extra{
+	display:none;
+	background-color: black;
+	color: orange;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	justify-content: center;
+	position: absolute;
+	transition: width 2s, height 2s, transfrom 2s;
+}
+.extraActive{
+	display: block;
+	flex-wrap: wrap;
+	transform: rotate(360deg) ;
+	}
+
+.Detail{
+	display: grid;
+	justify-content: center;
+
+}
+
+.popularity, .collections, .status{
+	/* display: inline-flex; */
+	/* background-color: purple; */
+	margin: 10px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.Info{
+	justify-content: center;
+}
+
+.Button{
+	height: auto;
+	width: 300px;
+	background-color: black;
+	/* padding: 1px; */
+}
+.Info > h4{
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+
+.Info > p{
+	margin-top: 2px;
+}
+
+.video{
+	justify-content: center;
+	margin-left: 35px;
+}
+
+.pretty{
+	display: flex;
+	justify-content: space-around;
+}
+
+.restInfo{
+	 justify-content: space-between;
+	 
+	 display: flex;
+	/* background-color: red; */
+	margin: 10px;
+
+}
+
+.Cast > H5 + p {
+	/* background-color: royalblue; */
+	justify-content: center;
+	margin: 0;
+}
+

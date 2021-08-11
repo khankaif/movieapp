@@ -1,0 +1,103 @@
+.movie{
+	width: 300px;
+	margin: 10px;
+	background-color: black;
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.display{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    transition: top 300ms ease-out,
+        left 300ms ease-out,
+        bottom 300ms ease-out,
+        right 300ms ease-out,
+}
+
+/* .display > img{
+	max-width:100%;
+	} */
+    
+    .info > h3{
+        margin:0px;
+    }
+
+    .Content > h4{
+        color: orange;
+    }
+    
+    .Content > p{
+        margin: 0px;
+    }
+    
+    .Content{
+        background-color: black;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        max-height:100%;
+        transform: translate(100%);
+        transition:transform 0.4s ease-in-out;
+    }
+    
+/* .movie:hover > .Content{
+    width: 100%; 
+
+    height: 100%;
+    transform : translate(0%);
+} */
+ .moreInfo,
+.lessInfo{
+    margin-top: auto;
+    cursor: pointer;
+    transition: transform 500ms ease-out, background 200ms ease-out;
+}
+/*
+.moreInfo{
+    transition-delay: 500ms, 0ms;
+}
+*/
+.lessInfo{
+    margin-left: auto;
+    transform: translateX(120%);
+}
+
+.Content{
+    position: relative;
+    top: 50%;
+    /* padding: 25px;*/ 
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie--open .display{
+    bottom:50%;
+    top:25px;
+    right: 25px;
+    left: 25px;
+}
+
+.movie--open .moreInfo{
+    transform:translateY(300%) ;
+    transition-delay:  0ms;
+}
+
+.movie--open .lessInfo{
+    transform: translateX(0);
+    transition-delay: 500ms, 0ms;
+}
+ 
